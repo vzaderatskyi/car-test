@@ -1,0 +1,38 @@
+div.car-item {
+    display: flex;
+    height: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 20%);
+
+    @media (max-width: 600px) { 
+        flex-direction: column;
+    }
+
+    .car-item--image {
+        width: 220px;
+
+        @media (max-width: 600px) { 
+            width: auto;
+        }
+    }
+
+    &--content{
+        padding: 8px 16px;
+    }
+
+    &--info-wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 16px;
+
+        div {
+            margin-right: 16px;
+        }
+    }
+
+    &--info {
+        display: flex;
+        align-items: center;
+        gap: 8px;        
+    }
+}

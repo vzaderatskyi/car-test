@@ -1,0 +1,9 @@
+.car-page {
+    &--link {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: black;
+        text-decoration: none;
+    }
+}
