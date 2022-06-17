@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Box, Container, Grid } from '@mui/material';
 import Loader from '../../components/Loader';
 import { getAllCarsAction } from './actions';
 import { selectors } from './reducer';
-import { Box, Container, Grid } from '@mui/material';
 import CarItem from './components/CarItem';
 import { nestedFilter } from '../../global/helpers';
 import Sidebar from './components/Sidebar';

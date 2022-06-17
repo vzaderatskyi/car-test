@@ -5,7 +5,6 @@ import Firebase from '../../global/services/firebase';
 export function* getCarSaga({ payload }) {
   try {
     const response = yield call(Firebase.getCarDocument, payload);
-    console.log(response)
     if(response){
       yield put(actions.getSingleCarAction.success(response));
     }else{

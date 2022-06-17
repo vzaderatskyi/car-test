@@ -3,6 +3,6 @@ import { carsReducer } from './pages/HomePage';
 import { singleCarReducer } from './pages/CarPage';
 
 export default combineReducers({
-    carsReducer,
-    singleCarReducer
+  carsReducer,
+  singleCarReducer
 });
